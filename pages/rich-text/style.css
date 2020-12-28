@@ -1,0 +1,28 @@
+body {
+  background-color: whitesmoke;
+  margin-top: 100px;
+}
+.buttons,
+.editor {
+  width: 65% !important;
+  margin: auto;
+  display: block;
+  border: 1px solid #ccc;
+}
+.editor {
+  height: 600px !important;
+  background-color: white;
+}
+.buttons {
+  border: none;
+  margin-bottom: 10px;
+}
+button,
+input,
+select {
+  margin: 5px;
+}
+button {
+  color: rgb(15, 14, 14);
+  background-color: #bdf33d;
+}

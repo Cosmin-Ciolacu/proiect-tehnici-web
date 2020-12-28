@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+    <link href="./../../styles/index.css" rel="stylesheet" />
+
+    <link href="./style.css" rel="stylesheet" />
+    <title>RICH TEXT EDITOR</title>
+</head>
+<body>
+    <section>
+        <div class="headerPage">
+            <a href="./../../" class="logo">Tehnici Web</a>
+            <div class="menu">
+                <a href="./pages/rich-text/" class="menuItem">
+                    <p>Rich text editor</p>
+                </a>
+                <a href="#" class="menuItem">
+                    <p>Color picker</p>
+                </a>
+                <a href="#" class="menuItem">
+                    <p>Simularea salturilor unei mingi</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- butoane de actiuni -->
+    <div class="buttons">
+        <button data-cmd="bold" class="btn"><i class="fa fa-bold"></i></button>
+        <button data-cmd="italic" class="btn"><i class="fa fa-italic"></i></button>
+        <button data-cmd="underline" class="btn"><i class="fa fa-underline"></i></button>
+        <button data-cmd="strikeThrough" class="btn"><i class="fa fa-strikethrough"></i></button>
+        <button data-cmd="justifyLeft" class="btn"><i class="fa fa-align-left"></i></button>
+        <button data-cmd="justifyCenter" class="btn"><i class="fa fa-align-center"></i></button>
+        <button data-cmd="justifyFull" class="btn"><i class="fa fa-align-justify"></i></button>
+        <button data-cmd="insertUnorderedList" class="btn"><i class="fa fa-list-ul"></i></button>
+        <button data-cmd="insertOrderedList" class="btn"><i class="fa fa-list-ol"></i></button>
+        <button data-cmd="createLink" class="btn"><i class="fa fa-link"></i></button>
+        Font
+        <select id="fontPicker">
+            <option value="Arial">Arial</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Courier">Courier</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+        Marime font
+        <select id="sizePicker">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+        Culoare font
+        <input type="color" id="colorPicker" />
+    </div>
+    <!-- editor -->
+    <iframe name="editor" class="editor" style="width:80%;height: 80%;margin:auto;display: block;"></iframe>
+    <script src="./main.js"></script>
+</body>
+</html>
