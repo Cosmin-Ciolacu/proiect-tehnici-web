@@ -11,6 +11,12 @@ window.onload = () => {
   editor.document.designMode = "on";
 };
 
+// schimbare mod
+
+const switchMode = (mode) => {
+  const htmlOutput = editor.document.querySelector("body").innerHTML;
+};
+
 // definire functii pentru executare comenzi
 
 const execCmd = (cmd, value = null) => {

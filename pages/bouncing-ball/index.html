@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./../../styles/index.css" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
-    
-    <title>COLOR PICKER</title>
+    <title>Simularea salturilor unei mingi</title>
 </head>
 <body>
     <section>
@@ -16,23 +15,23 @@
                 <a href="./../rich-text/" class="menuItem">
                     <p>Rich text editor</p>
                 </a>
-                <a href="./" class="menuItem">
+                <a href="./../color-picker/" class="menuItem">
                     <p>Color picker</p>
                 </a>
-                <a href="../bouncing-ball/" class="menuItem">
+                <a href="./" class="menuItem">
                     <p>Simularea salturilor unei mingi</p>
                 </a>
             </div>
         </div>
     </section>
-    <div class="colors-container">
-        <div class="color-picker">
-            <canvas id="colors" width="250" height="250"></canvas>
-            <h3>culoarea in rgb este: <span id="rgbColor"></span></h3>
-            <h3>culoarea in hex este: <span id="hexColor"></span></h3>
+    <div class="pageContainer">
+        <canvas width="720" height="480"></canvas>
+        <div>
+            <p>viteza: <span id="speedSpan"></span></p>
+            <input type="range" min="0" max="10" value="2" id="speedPicker" />
+        
         </div>
     </div>
-    <script src="./main.js"></script>
-    
+    <script src="./main.js"></script>    
 </body>
 </html>

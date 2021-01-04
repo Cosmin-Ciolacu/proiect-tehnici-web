@@ -47,3 +47,25 @@
 .menuItem:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: url("./../img/bk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1.2rem;
+}
+.title,
+.subtitle {
+  color: white;
+}
+.title {
+  font-size: 3rem;
+}
+.subtitle {
+  font-size: 1.5rem;
+}
